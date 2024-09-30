@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=FAMILY_NAME:wght@WEIGHT_OR_RANGE&display=swap');
+@import url('./components/common/common.scss');
+
+$linkedinBlue: #0072b1;
+$linkedinBlue2: #0073b1;
+$linkedinBlue3: #004c75;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+
+  color-scheme: light dark;
+  color: #212121;
+  background-color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+.common-input{
+  height: 30px;
+  background-color: white;
+  padding: 10px;
+  outline: none;
+  border: 1px solid #212121;
+  color: #212121;
+  border-radius: 3px;
+  font-family: 16px;
+  margin: 10px 0px; 
+}
+.common-input:focus{
+  outline: 1 px solid $linkedinBlue;
+}
+::placeholder{
+  // color: black;
+  font-family: system-ui;
+  margin-top: 16px;
+  border-radius: 3px;
+}
+
+.login-btn{
+  width: 300px;
+  height: 50px;
+  cursor: pointer;
+  background-color:$linkedinBlue;
+  border-radius: 30px;
+  outline: none;
+  border: none;
+  font-weight: 600;
+  
+}
+.login-btn:hover{
+  background-color: $linkedinBlue3;
+}
+
+
+/* a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+} */
+
+/* body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+} */
+
+/* h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */

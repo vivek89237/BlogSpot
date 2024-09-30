@@ -1,0 +1,11 @@
+.notif-container{
+    position: fixed;
+    left: 80%;
+    padding: 10px;
+    z-index: 10;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    background-color: #EBF4F6;
+    border-radius: 5px;
+}

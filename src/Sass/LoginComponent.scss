@@ -1,0 +1,130 @@
+$linkedinBlue: #0072b1;
+$linkedinBlue2: #0073b1;
+$linkedinBlue3: #004c75;
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.login-wrapper{
+    background-color: white;
+    height: 100vh;
+    .login-wrapper-inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    .heading{
+        font-family: system-ui;
+        font-weight: 500;
+        color: rgba(0, 0, 0, 0.9);
+    }
+
+    .sub-heading{
+        margin-top: -20px;
+        font-family: system-ui;
+    }
+}
+
+.auth-inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+    // .common-input{
+    //     height: 30px;
+    //     background-color: white;
+    //     padding: 10px;
+    //     outline: none;
+    //     border: 1px solid #212121;
+    //     color: #212121;
+    //     border-radius: 3px;
+    //     font-family: 16px;
+    //     margin: 10px 0px; 
+    // }
+    // .common-input:focus{
+    //     outline: 1 px solid $linkedinBlue;
+    // }
+    // ::placeholder{
+    //     // color: black;
+    //     font-family: system-ui;
+    //     margin-top: 16px;
+    //     border-radius: 3px;
+    // }
+}
+
+.login-btn{
+    width: 300px;
+    height: 50px;
+    cursor: pointer;
+    background-color:$linkedinBlue;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    
+}
+.login-btn:hover{
+    background-color: $linkedinBlue3;
+}
+
+.google-btn-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .google-btn{
+        width: 300px !important;
+    }
+    p{
+        font-weight: 100;
+        font-family: 'Calibri';
+        span{
+            font-weight: 400;
+        }
+        span:hover{
+            color: #004c75;
+            cursor: pointer;
+        }
+    }
+}
+
+.linkedlogo{
+    width: 80px;
+}
+
+.hr-text {
+    line-height: 1em;
+    position: relative;
+    outline: 0;
+    border: 0;
+    color: black;
+    text-align: center;
+    height: 1.5em;
+    opacity: .5;
+    &:before {
+      content: '';
+      // use the linear-gradient for the fading effect
+      // use a solid background color for a solid bar
+      background: linear-gradient(to right, transparent, #908d7a, transparent);
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 100%;
+      height: 1px;
+    }
+    &:after {
+      content: attr(data-content);
+      position: relative;
+      display: inline-block;
+      color: black;
+  
+      padding: 0 .5em;
+      line-height: 1.5em;
+      // this is really the only tricky part, you need to specify the background color of the container element...
+      color: #aca991;
+      background-color: white;
+    }
+}
+

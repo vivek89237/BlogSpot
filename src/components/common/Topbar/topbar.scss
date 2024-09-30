@@ -1,0 +1,69 @@
+.topbar-main{
+    width: 100%;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.87);
+    display:flex;
+    align-items: center;
+    // z-index: 2;
+    // position: fixed;
+   
+    .linkedlogo{
+        width: 60px;
+        margin-left: 20px;
+    }
+    .topbar-items{
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 60px;
+        margin: 30px;
+    }
+    .react-icons{
+        color: #656464 ;
+        cursor: pointer;
+        :hover{
+            color: black;
+        }
+    }
+    .user-logo{
+        // position: relative;
+        left:95%;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: solid 5px white;
+        
+        cursor: pointer;
+    }
+    
+    .popup-card{
+        position: absolute;
+        right: 10px;
+        top: 65px;
+        z-index: 2;
+    }
+    
+}
+
+.user-search{
+    position: fixed;
+    left: 100px;
+    padding: 10px;
+    z-index: 10;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    background-color: #EBF4F6;
+    border-radius: 5px;
+    .nouser{
+        width: 300px;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+

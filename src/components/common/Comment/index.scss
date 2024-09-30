@@ -1,0 +1,35 @@
+.comment-container{
+    display: grid;
+    grid-template-columns: 1fr 5fr 2fr;
+    grid-template-rows: 1fr auto;
+    background-color: aliceblue;
+    padding: 0px 15px 0px 15px;
+    border-radius: 30px;
+    .userimg{
+        grid-area: 0/0/1/1;
+        margin-top: 10px;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        border: solid white 2px;
+    }
+    .username{
+        grid-area: 0/1/1/2;
+    }
+    .comment{
+        grid-area: 2/2/2/3;
+        font-family: system-ui;
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: -7px;
+    }
+    .timeStamp{
+        grid-area: 0/2/1/3;
+        font-family: system-ui;
+        font-size: 10px;
+        font-weight: 400;
+    }
+    .reply-btn{
+        
+    }
+}

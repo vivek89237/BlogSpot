@@ -1,0 +1,30 @@
+.user-details{
+    display: flex;
+    //gap: 5px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0px 10px 0px;
+    .backgroung-img{
+        background-color: black;
+        height: 100px;
+        width: 580px;
+    }
+    .img{
+        margin-top: -60px;
+        z-index: 1;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: solid 5px white;
+    }
+    .user-name{
+        font-family: system-ui;
+        font-weight: 600;
+    }
+    .user-headline{
+        margin-top: -15px;
+        font-family: system-ui;
+        font-weight: 400;
+    }
+}
